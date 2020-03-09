@@ -51,6 +51,11 @@ section .wrapper {
   margin: 0 auto;
 }
 
+footer .wrapper {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
 .header {
   background: url("../img/header/header-bg.png") no-repeat;
   background-size: cover;
@@ -230,6 +235,13 @@ section .wrapper {
   display: flex;
   justify-content: space-between;
   padding: 41px 0 35px;
+}
+.footer .wrapper p {
+  font-family: "Open Sans", sans-serif;
+  color: #505d68;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 34px;
 }
 
 /*# sourceMappingURL=style.css.map */
