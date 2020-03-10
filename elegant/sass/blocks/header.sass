@@ -1,21 +1,27 @@
 .header 
-    background: url('../img/header/header-bg.png') no-repeat
+    background: url('../img/header/header-bg-big.png') no-repeat
     background-size: cover
+    background-position: center
     padding: 0px 48px 315px
     .header_top
         height: 76px
         display: flex
         justify-content: space-between
         align-items: center
-        .header_logo 
+        padding: 0
+        a
             img:hover 
                 cursor: pointer
+                transform: scale(1.1, 1.1)
+                transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99)
         .header_navigation
+            flex-basis: 40%
+            flex-grow: 0
             .navigation
                 display: flex
                 justify-content: space-between
                 align-items: center
-                li 
+                .nav-item 
                     a 
                         text-decoration: none
                         font-family: $font
@@ -31,7 +37,6 @@
                         background-color: #8e8e8e12
                         color: #4c4c4ca8
                         transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99)
-
     p 
         color: $color-header-text
         font-family: $font

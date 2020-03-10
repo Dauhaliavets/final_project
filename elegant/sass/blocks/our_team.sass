@@ -12,9 +12,15 @@
         .box_items 
             display: flex
             justify-content: space-between
+            @media all and ( max-width: 880px )
+                flex-direction: column
             .item 
                 width: 32.8%
                 background-color: $color-element-bg
+                @media all and ( max-width: 880px )
+                    width: 90%
+                    align-self: center
+                    margin-bottom: 10px
                 .item_foto 
                     img 
                         height: 100%
