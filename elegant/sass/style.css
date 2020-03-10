@@ -43,6 +43,15 @@ button a {
   letter-spacing: 0.7px;
 }
 
+button:hover {
+  background-color: #00000061;
+  border-color: #ececec;
+  transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99);
+}
+button:hover a {
+  color: #ffffff;
+}
+
 section {
   padding: 81px 0;
 }
@@ -59,15 +68,38 @@ footer .wrapper {
 .header {
   background: url("../img/header/header-bg.png") no-repeat;
   background-size: cover;
-  padding: 17px 48px 315px;
+  padding: 0px 48px 315px;
 }
 .header .header_top {
+  height: 76px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header .header_top .header_logo img:hover {
+  cursor: pointer;
 }
 .header .header_top .header_navigation .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header .header_top .header_navigation .navigation li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 76px;
+  letter-spacing: 0.8px;
+  display: block;
+  padding: 0px 30px;
+}
+.header .header_top .header_navigation .navigation li a:hover {
+  background-color: #8e8e8e12;
+  color: #4c4c4ca8;
+  transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99);
 }
 .header p {
   color: #ffffff;
@@ -209,6 +241,8 @@ footer .wrapper {
   padding-top: 52px;
   padding-bottom: 40px;
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #505d68;
 }
 .contact-us_info .contact-us_item h6 {
   font-family: "Open Sans", sans-serif;
@@ -226,6 +260,10 @@ footer .wrapper {
   font-weight: 300;
   line-height: 34px;
   letter-spacing: 0.57px;
+}
+.contact-us_info .contact-us_item a {
+  font-family: "Open Sans", sans-serif;
+  color: #505d68;
 }
 
 .footer {
