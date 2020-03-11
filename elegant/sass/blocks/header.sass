@@ -1,10 +1,84 @@
+// .header 
+//     background: url('../img/header/header-bg-big.png') no-repeat
+//     background-size: cover
+//     background-position: center
+//     padding: 0px 48px 315px
+//     @media all and ( max-width: 745px )
+//         background: url('../img/header/header-bg-mini.png') no-repeat
+//         background-size: cover
+//         background-position: center
+//         padding: 0px 0px 491px
+//     .header_top
+//         display: flex
+//         justify-content: space-between
+//         align-items: center
+//         padding: 0
+//         @media all and ( max-width: 745px )
+//             background-color: #1e262bb3
+//             padding: 14px 0px 18px 28px
+//         a
+//             img:hover 
+//                 cursor: pointer
+//                 transform: scale(1.1, 1.1)
+//                 transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99)
+//         @media all and ( max-width: 745px )
+//             .navbar-toggler 
+//                 background-color: #242f35e6
+//         .header_navigation
+//             flex-basis: 40%
+//             flex-grow: 0
+//             .navigation
+//                 display: flex
+//                 justify-content: space-between
+//                 align-items: center                
+//                 .nav-item 
+//                     @media all and ( max-width: 992px )
+//                         display: block
+//                         width: 100%
+//                         text-align: center
+//                     a 
+//                         text-decoration: none
+//                         font-family: $font
+//                         color: $color-header-text
+//                         text-transform: uppercase
+//                         font-size: 16px
+//                         font-weight: 400
+//                         line-height: 76px
+//                         letter-spacing: 0.8px
+//                         display: block
+//                         padding: 0px 30px
+//                         @media all and ( max-width: 992px )
+//                             line-height: 46px
+//                     a:hover 
+//                         background-color: #547386bb
+//                         color: #283843
+//                         transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99)
+//                         @media all and ( max-width: 992px )
+//                             background-color: #283238
+//                             color: #ffffff
+//     p 
+//         color: $color-header-text
+//         font-family: $font
+//         text-align: center
+//         font-size: 80px
+//         font-weight: 300
+//         line-height: 60px
+//         margin-top: 245px
+//         @media all and ( max-width: 745px )
+//             font-size: 62px   
+//         span 
+//             font-family: $font
+//             font-weight: 300
+//             font-style: italic
+//             letter-spacing: 4px
+
+// ++++++++++++++ MEDIA ++++++++++++++++//I
 .header 
     background: url('../img/header/header-bg-big.png') no-repeat
     background-size: cover
     background-position: center
     padding: 0px 48px 315px
     .header_top
-        height: 76px
         display: flex
         justify-content: space-between
         align-items: center
@@ -20,7 +94,7 @@
             .navigation
                 display: flex
                 justify-content: space-between
-                align-items: center
+                align-items: center                
                 .nav-item 
                     a 
                         text-decoration: none
@@ -34,8 +108,8 @@
                         display: block
                         padding: 0px 30px
                     a:hover 
-                        background-color: #8e8e8e12
-                        color: #4c4c4ca8
+                        background-color: #547386bb
+                        color: #283843
                         transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99)
     p 
         color: $color-header-text
@@ -50,3 +124,34 @@
             font-weight: 300
             font-style: italic
             letter-spacing: 4px
+
+.header 
+    @media all and ( max-width: 992px )
+        background: url('../img/header/header-bg-mini.png') no-repeat
+        background-size: cover
+        background-position: center
+        padding: 0px 0px 491px
+    .header_top
+        @media all and ( max-width: 992px )
+            background-color: #1e262bb3
+            padding: 14px 24px 18px 28px
+        @media all and ( max-width: 992px )
+        .header_navigation
+            .navigation                
+                .nav-item 
+                    @media all and ( max-width: 992px )
+                        display: block
+                        width: 100%
+                        text-align: center
+                    a 
+                        @media all and ( max-width: 992px )
+                            line-height: 46px
+                    a:hover 
+                        @media all and ( max-width: 992px )
+                            background-color: #283238
+                            color: #ffffff
+    p 
+        @media all and ( max-width: 745px )
+            font-size: 62px
+        @media all and ( max-width: 320px )
+            font-size: 46px

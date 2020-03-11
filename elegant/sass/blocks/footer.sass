@@ -4,9 +4,14 @@
         display: flex
         justify-content: space-between
         padding: 41px 0 35px
+        @media all and ( max-width: 700px )
+            display: block
+            padding: 54px 16px 41px 16px
         p 
             font-family: $font
             color: $color-element-text
             font-size: 16px
             font-weight: 300
             line-height: 34px
+            @media all and ( max-width: 400px )
+                font-size: 12px

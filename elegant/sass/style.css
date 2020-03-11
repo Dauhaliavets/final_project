@@ -18,6 +18,11 @@ h3 {
   text-align: center;
   margin-top: 21px;
 }
+@media all and (max-width: 400px) {
+  h3 {
+    font-size: 30px;
+  }
+}
 
 h4 {
   opacity: 0.7;
@@ -50,6 +55,7 @@ button:hover {
 }
 button:hover a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 section {
@@ -59,9 +65,9 @@ section .wrapper {
   max-width: 770px;
   margin: 0 auto;
 }
-@media all and (max-width: 880px) {
+@media all and (max-width: 992px) {
   section .wrapper {
-    max-width: 640px;
+    max-width: 700px;
   }
 }
 @media all and (max-width: 700px) {
@@ -75,9 +81,9 @@ footer .wrapper {
   max-width: 770px;
   margin: 0 auto;
 }
-@media all and (max-width: 880px) {
+@media all and (max-width: 992px) {
   footer .wrapper {
-    max-width: 640px;
+    max-width: 700px;
   }
 }
 @media all and (max-width: 700px) {
@@ -94,7 +100,6 @@ footer .wrapper {
   padding: 0px 48px 315px;
 }
 .header .header_top {
-  height: 76px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,8 +132,8 @@ footer .wrapper {
   padding: 0px 30px;
 }
 .header .header_top .header_navigation .navigation .nav-item a:hover {
-  background-color: #8e8e8e12;
-  color: #4c4c4ca8;
+  background-color: #547386bb;
+  color: #283843;
   transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99);
 }
 .header p {
@@ -145,6 +150,49 @@ footer .wrapper {
   font-weight: 300;
   font-style: italic;
   letter-spacing: 4px;
+}
+
+@media all and (max-width: 992px) {
+  .header {
+    background: url("../img/header/header-bg-mini.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 0px 491px;
+  }
+}
+@media all and (max-width: 992px) {
+  .header .header_top {
+    background-color: #1e262bb3;
+    padding: 14px 24px 18px 28px;
+  }
+}
+@media all and (max-width: 992px) {
+  .header .header_top .header_navigation .navigation .nav-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media all and (max-width: 992px) {
+  .header .header_top .header_navigation .navigation .nav-item a {
+    line-height: 46px;
+  }
+}
+@media all and (max-width: 992px) {
+  .header .header_top .header_navigation .navigation .nav-item a:hover {
+    background-color: #283238;
+    color: #ffffff;
+  }
+}
+@media all and (max-width: 745px) {
+  .header p {
+    font-size: 62px;
+  }
+}
+@media all and (max-width: 320px) {
+  .header p {
+    font-size: 46px;
+  }
 }
 
 .who_we_are {
@@ -168,10 +216,16 @@ footer .wrapper {
 }
 .what-we-do_box .what-we-do_item {
   width: 25%;
+  padding: 1.5px;
 }
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1200px) {
   .what-we-do_box .what-we-do_item {
     width: 50%;
+  }
+}
+@media all and (max-width: 880px) {
+  .what-we-do_box .what-we-do_item {
+    width: 100%;
   }
 }
 .what-we-do_box .what-we-do_item img {
@@ -206,7 +260,7 @@ footer .wrapper {
 }
 @media all and (max-width: 880px) {
   .our-team .wrapper .box_items .item {
-    width: 90%;
+    width: 100%;
     align-self: center;
     margin-bottom: 10px;
   }
@@ -237,6 +291,17 @@ footer .wrapper {
 }
 .last-post .wrapper .post_box > * {
   width: 50%;
+}
+@media all and (max-width: 880px) {
+  .last-post .wrapper .post_box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media all and (max-width: 660px) {
+  .last-post .wrapper .post_box > * {
+    width: 100%;
+  }
 }
 .last-post .wrapper .post_box .post_img img {
   width: 100%;
@@ -291,6 +356,11 @@ footer .wrapper {
   font-family: "Open Sans", sans-serif;
   color: #505d68;
 }
+@media all and (max-width: 600px) {
+  .contact-us_info .contact-us_item {
+    width: 45%;
+  }
+}
 .contact-us_info .contact-us_item h6 {
   font-family: "Open Sans", sans-serif;
   color: #505d68;
@@ -308,6 +378,14 @@ footer .wrapper {
   line-height: 34px;
   letter-spacing: 0.57px;
 }
+@media all and (max-width: 600px) {
+  .contact-us_info .contact-us_item p {
+    font-size: 13px;
+  }
+  .contact-us_info .contact-us_item p span {
+    display: none;
+  }
+}
 .contact-us_info .contact-us_item a {
   font-family: "Open Sans", sans-serif;
   color: #505d68;
@@ -321,12 +399,23 @@ footer .wrapper {
   justify-content: space-between;
   padding: 41px 0 35px;
 }
+@media all and (max-width: 700px) {
+  .footer .wrapper {
+    display: block;
+    padding: 54px 16px 41px 16px;
+  }
+}
 .footer .wrapper p {
   font-family: "Open Sans", sans-serif;
   color: #505d68;
   font-size: 16px;
   font-weight: 300;
   line-height: 34px;
+}
+@media all and (max-width: 400px) {
+  .footer .wrapper p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
