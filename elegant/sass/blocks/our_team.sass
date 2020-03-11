@@ -17,6 +17,10 @@
             .item 
                 width: 32.8%
                 background-color: $color-element-bg
+                &:hover 
+                    cursor: pointer
+                    transform: scale(1.03, 1.03)
+                    transition: all 1s cubic-bezier(0.04, 0.74, 0.32, 1.04)
                 @media all and ( max-width: 880px )
                     width: 100%
                     align-self: center

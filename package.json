@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "style": "sass --watch elegant/sass/style.sass elegant/sass/style.css",
+    "styleWorks": "sass --watch elegant/pages/works/sass/style_works.sass elegant/pages/works/sass/style_works.css",
+    "styleAbout": "sass --watch elegant/pages/about/sass/style_about.sass elegant/pages/about/sass/style_about.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

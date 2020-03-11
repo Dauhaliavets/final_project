@@ -49,13 +49,18 @@ button a {
 }
 
 button:hover {
-  background-color: #00000061;
+  background-color: rgba(0, 0, 0, 0.3803921569);
   border-color: #ececec;
   transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99);
 }
 button:hover a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.current_link {
+  border-bottom: 3px solid rgba(84, 115, 134, 0.7333333333);
+  color: #283843;
 }
 
 section {
@@ -132,8 +137,9 @@ footer .wrapper {
   padding: 0px 30px;
 }
 .header .header_top .header_navigation .navigation .nav-item a:hover {
-  background-color: #547386bb;
+  background-color: rgba(84, 115, 134, 0.7333333333);
   color: #283843;
+  border-bottom-color: transparent;
   transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99);
 }
 .header p {
@@ -232,6 +238,13 @@ footer .wrapper {
   width: 100%;
   height: 100%;
 }
+.what-we-do_box .what-we-do_item:hover {
+  cursor: pointer;
+}
+.what-we-do_box .what-we-do_item:hover img {
+  transform: scale(1.05, 1.05);
+  transition: all 1s cubic-bezier(0.04, 0.74, 0.32, 1.04);
+}
 
 .our-team {
   text-align: center;
@@ -257,6 +270,11 @@ footer .wrapper {
 .our-team .wrapper .box_items .item {
   width: 32.8%;
   background-color: #f9f9f9;
+}
+.our-team .wrapper .box_items .item:hover {
+  cursor: pointer;
+  transform: scale(1.03, 1.03);
+  transition: all 1s cubic-bezier(0.04, 0.74, 0.32, 1.04);
 }
 @media all and (max-width: 880px) {
   .our-team .wrapper .box_items .item {
