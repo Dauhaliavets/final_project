@@ -8,6 +8,8 @@
     "styleWorks": "sass --watch elegant/pages/works/sass/style_works.sass elegant/pages/works/sass/style_works.css",
     "styleAbout": "sass --watch elegant/pages/about/sass/style_about.sass elegant/pages/about/sass/style_about.css",
     "styleBlog": "sass --watch elegant/pages/blog/sass/style_blog.sass elegant/pages/blog/sass/style_blog.css",
+    "styleContact": "sass --watch elegant/pages/contact_us/sass/style_contact_us.sass elegant/pages/contact_us/sass/style_contact_us.css",
+    "styleProject": "sass --watch elegant/pages/project/sass/style_project.sass elegant/pages/project/sass/style_project.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

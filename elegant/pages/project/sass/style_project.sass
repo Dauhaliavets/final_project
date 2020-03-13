@@ -1,0 +1,104 @@
+@import "../../../sass/constants/constants"
+
+.header 
+    background: url('../img/project-header-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+.projects-box 
+    .wrapper_projects 
+        width: 1151px
+        margin: 0 auto
+        background-color: $color-element-bg
+        padding: 64px
+        display: flex
+        justify-content: space-between
+        @media all and ( max-width: 1200px )
+            width: 970px
+            padding: 149px 37px 32px
+        @media all and ( max-width: 992px )
+            width: 96%
+            padding-top: 43px
+        @media all and ( max-width: 766px )
+            flex-direction: column
+        .current_project 
+            flex: 0 0 65%
+            h3 
+                color: #000000
+                font-family: $font
+                font-size: 45px
+                font-weight: 700
+                line-height: 32px
+                letter-spacing: 2.25px
+                text-align: left
+            p 
+                color: #000000
+                font-family: 'Cardo', serif
+                font-size: 20px
+                font-weight: 400
+                line-height: 32px
+                letter-spacing: 1px
+                margin: 126px 0px 101px
+                @media all and ( max-width: 992px )
+                    margin: 95px 0px 76px
+                @media all and ( max-width: 414px )
+                    font-size: 16px
+                    margin: 56px 0px 56px
+                span 
+                    font-family: 'Cardo', serif
+                    font-weight: 700
+            img 
+                width: 100%
+                margin-bottom: 19px
+            img:hover 
+                transform: scale(1.03, 1.03)
+                transition: all 1s ease
+            img:last-child 
+                margin-bottom: 0
+        .other_projects 
+            flex: 0 0 29%
+            h3 
+                display: none
+                @media all and ( max-width: 766px )
+                    display: block
+                    color: #000000
+                    font-family: $font
+                    font-size: 38px
+                    font-weight: 700
+                    line-height: 32px
+                    letter-spacing: 2.25px
+                    text-align: left
+                    margin: 35px 0 28px
+            .other_project_item
+                margin-bottom: 3px
+                img 
+                    width: 100%
+                img:hover 
+                    transform: scale(1.02, 1.02)
+                    transition: all 1s ease
+            .other_project_item:last-child 
+                margin-bottom: 0
+    .social_buttons 
+        margin-top: 104px
+        display: flex
+        justify-content: space-around
+        @media all and ( max-width: 414px )
+            flex-direction: column
+            padding: 10px
+            margin-top: 68px
+        button 
+            flex: 0 0 21%
+            border: 1px solid #a1a1a1
+            .fa 
+                color: rgba(95, 94, 94, 0.72)
+            @media all and ( max-width: 766px )
+                flex: 0 0 30%
+            @media all and ( max-width: 414px )
+                margin-bottom: 8px
+        button:hover 
+            border-radius: 10px
+            .fa 
+                color: #202020
+                transform: scale(1.2, 1.2)
+                transition: all 1s cubic-bezier(0, 1.15, 0.58, 0.99)
+                

@@ -7,6 +7,18 @@ h2 {
   letter-spacing: 0.65px;
   text-align: center;
 }
+@media all and (max-width: 760px) {
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+@media all and (max-width: 400px) {
+  h2 {
+    font-size: 16px;
+  }
+}
 
 h3 {
   opacity: 0.7;
@@ -18,9 +30,18 @@ h3 {
   text-align: center;
   margin-top: 21px;
 }
+@media all and (max-width: 760px) {
+  h3 {
+    color: #021725;
+    font-size: 66px;
+    font-weight: 400;
+    line-height: 84px;
+  }
+}
 @media all and (max-width: 400px) {
   h3 {
     font-size: 30px;
+    line-height: 34px;
   }
 }
 
@@ -75,7 +96,7 @@ section .wrapper {
     max-width: 700px;
   }
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 710px) {
   section .wrapper {
     max-width: 100%;
     padding: 0 20px;
@@ -91,7 +112,7 @@ footer .wrapper {
     max-width: 700px;
   }
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 710px) {
   footer .wrapper {
     max-width: 100%;
     padding: 0 20px;

@@ -1,0 +1,111 @@
+.header {
+  background: url("../img/counact-us-header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media all and (max-width: 968px) {
+  .header {
+    background: none;
+    padding-bottom: 0;
+  }
+}
+
+.contact_us .wrapper .contact_box {
+  margin-top: 87px;
+  display: flex;
+  flex-flow: row wrap;
+}
+@media all and (max-width: 760px) {
+  .contact_us .wrapper .contact_box {
+    flex-flow: column nowrap;
+  }
+}
+@media all and (max-width: 400px) {
+  .contact_us .wrapper .contact_box {
+    margin-top: 70px;
+  }
+}
+.contact_us .wrapper .contact_box .contact_item {
+  flex: 0 0 39%;
+  padding: 33px 33px 100px;
+}
+.contact_us .wrapper .contact_box .contact_item .dash {
+  width: 31px;
+  height: 3px;
+  background-color: #ffffff;
+}
+.contact_us .wrapper .contact_box .contact_item p {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  margin-top: 46px;
+}
+@media all and (max-width: 760px) {
+  .contact_us .wrapper .contact_box .contact_item p {
+    margin-top: 88px;
+    font-size: 46px;
+    line-height: 58.56px;
+  }
+}
+@media all and (max-width: 550px) {
+  .contact_us .wrapper .contact_box .contact_item p {
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: 38px;
+  }
+}
+.contact_us .wrapper .contact_box .contact_item:first-child {
+  background-color: #d3b000;
+  margin-right: 6px;
+}
+@media all and (max-width: 760px) {
+  .contact_us .wrapper .contact_box .contact_item:first-child {
+    margin-right: 0;
+  }
+}
+.contact_us .wrapper .contact_box .contact_item:last-child {
+  background-color: #212121;
+  margin-left: 6px;
+}
+@media all and (max-width: 760px) {
+  .contact_us .wrapper .contact_box .contact_item:last-child {
+    margin-left: 0;
+  }
+}
+.contact_us .wrapper .contact_box .contact_item_image {
+  flex: 0 0 60%;
+}
+.contact_us .wrapper .contact_box .contact_item_image img {
+  width: 100%;
+}
+.contact_us .wrapper .contact_box .contact_item_info p {
+  flex: 0 0 60%;
+  padding: 47px 59px 40px 47px;
+  color: #323d43;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  background-color: #f9f9f9;
+}
+@media all and (max-width: 450px) {
+  .contact_us .wrapper .contact_box .contact_item_info p {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+.contact_us .button {
+  display: block;
+  margin: 77px auto 86px;
+}
+@media all and (max-width: 550px) {
+  .contact_us .button {
+    margin: 50px auto 30px;
+  }
+}
+
+/*# sourceMappingURL=style_contact_us.css.map */

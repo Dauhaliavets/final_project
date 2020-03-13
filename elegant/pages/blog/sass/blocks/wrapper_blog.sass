@@ -1,42 +1,120 @@
+.header 
+    @media all and ( max-width: 968px )
+        background: none
+        padding-bottom: 0
 .wrapper_blog
     width: 1151px
     background-color: $color-element-bg
     margin: 78px auto
-    padding: 64px
-    display: flex
-    flex-flow: wrap
-    .article_box 
-        flex: 0 0 666px
-        margin-right: 55px
-        .article_item
-            padding: 32px
+    padding: 64px 70px 64px 64px
+    @media all and ( max-width: 1280px )
+        width: 1000px
+    @media all and ( max-width: 1030px )
+        width: 920px
+    @media all and ( max-width: 968px )
+        width: 100%
+        padding: 30px
+        margin: 0
+    @media all and ( max-width: 490px )
+        padding: 0 0 30px
+    .wrapper_blog_flex
+        display: flex
+        margin-bottom: 64px
+        @media all and ( max-width: 968px )
+            flex-direction: column
+            align-items: center
+        @media all and ( max-width: 490px )
+            margin-bottom: 40px
+        .article_box 
+            flex: 0 0 70%
+            margin-right: 55px
+            @media all and ( max-width: 968px )
+                margin-right: 0
+            .article_item
+                padding: 32px
+                flex-direction: column
+                background-color: #ffffff
+                @media all and ( max-width: 968px )
+                    padding: 68px
+                img 
+                    width: 100%
+                h5 
+                    color: #000000
+                    font-family: $font
+                    font-size: 30px
+                    font-weight: 300
+                    line-height: 66px
+                    letter-spacing: 1.05px
+                span 
+                    color: #d3b000
+                    font-family: $font
+                    font-size: 15px
+                    font-weight: 300
+                    line-height: 66px
+                p 
+                    color: #021725
+                    font-family: 'Cardo', serif
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 25px
+                    letter-spacing: 0.08px
+                    margin: 33px 0 67px
+                button 
+                    align-items: left
+            .article_item:not(:last-child)
+                margin-bottom: 57px
+        .aside_box 
+            flex: 0 0 30%
             display: flex
             flex-direction: column
-            background-color: #ffffff
-            h5 
-                color: #000000
-                font-family: $font
-                font-size: 30px
-                font-weight: 300
-                line-height: 66px
-                letter-spacing: 1.05px
-            span 
-                color: #d3b000
-                font-family: $font
-                font-size: 15px
-                font-weight: 300
-                line-height: 66px
-            p 
-                color: #021725
-                font-family: 'Cardo', serif
-                font-size: 16px
-                font-weight: 400
-                line-height: 25px
-                letter-spacing: 0.08px
-                margin: 33px 0 67px
-            button 
-                align-items: left
-        .article_item:not(:last-child)
-            margin-bottom: 57px
-    .aside_box 
-        flex: 0 0 297px
+            @media all and ( max-width: 968px )
+                padding: 184px 60px 60px
+            @media all and ( max-width: 490px )
+                padding: 120px 40px 30px
+            .aside_item
+                h3 
+                    font-size: 23px
+                    font-weight: 300
+                    line-height: 32px
+                    letter-spacing: 0.46px
+                    text-align: left
+                    border-bottom: 3px solid #d3b000
+                    padding-bottom: 12px
+                    margin-top: 0
+                ul 
+                    margin-top: 37px
+                    margin-bottom: 57px
+                    a 
+                        color: $color-text
+                        font-family: $font
+                        font-style: italic
+                        font-size: 16px
+                        font-weight: 300
+                        line-height: 26px
+                .project_box 
+                    display: flex
+                    flex-direction: column
+                    margin-top: 32px
+                    width: 100%
+                    @media all and ( max-width: 968px )
+                        flex-direction: row
+                        flex-flow: wrap
+                    @media all and ( max-width: 675px )
+                        flex-direction: column
+                    .project_item 
+                        margin-bottom: 2px
+                        @media all and ( max-width: 968px )
+                            flex-basis: 49.8%
+                            margin-right: 2px
+                        @media all and ( max-width: 675px )
+                            flex-basis: 50%
+                            margin-right: 0
+                        img 
+                            width: 100%
+                    .project_item:nth-child(2), .project_item:nth-child(4)
+                        @media all and ( max-width: 968px )
+                            margin-right: 0
+    .button_box
+        .button
+            margin: 0 auto
+            display: block

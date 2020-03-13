@@ -1,0 +1,75 @@
+@import "../../../sass/constants/constants"
+
+.header 
+    background: url('../img/counact-us-header-bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    @media all and ( max-width: 968px )
+        background: none
+        padding-bottom: 0
+.contact_us 
+    .wrapper 
+        .contact_box 
+            margin-top: 87px
+            display: flex
+            flex-flow: row wrap
+            @media all and ( max-width: 760px )
+                flex-flow: column nowrap
+            @media all and ( max-width: 400px )
+                margin-top: 70px
+            .contact_item 
+                flex: 0 0 39%
+                padding: 33px 33px 100px
+                .dash 
+                    width: 31px
+                    height: 3px
+                    background-color: #ffffff
+                p 
+                    color: #ffffff
+                    font-family: $font
+                    font-size: 25px
+                    font-weight: 400
+                    line-height: 32px
+                    letter-spacing: -0.5px
+                    margin-top: 46px
+                    @media all and ( max-width: 760px )
+                        margin-top: 88px
+                        font-size: 46px
+                        line-height: 58.56px
+                    @media all and ( max-width: 550px )
+                        margin-top: 60px
+                        font-size: 24px
+                        line-height: 38px
+            .contact_item:first-child
+                background-color: #d3b000
+                margin-right: 6px
+                @media all and ( max-width: 760px )
+                    margin-right: 0
+            .contact_item:last-child
+                background-color: #212121
+                margin-left: 6px
+                @media all and ( max-width: 760px )
+                    margin-left: 0
+            .contact_item_image
+                flex: 0 0 60%
+                img 
+                    width: 100%
+            .contact_item_info 
+                p 
+                    flex: 0 0 60%
+                    padding: 47px 59px 40px 47px
+                    color: #323d43
+                    font-family: $font
+                    font-size: 20px
+                    font-weight: 300
+                    line-height: 32px
+                    background-color: $color-element-bg
+                    @media all and ( max-width: 450px )
+                        font-size: 18px
+                        padding: 20px
+    .button 
+        display: block
+        margin: 77px auto 86px
+        @media all and ( max-width: 550px )
+            margin: 50px auto 30px
