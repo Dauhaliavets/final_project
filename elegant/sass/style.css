@@ -612,24 +612,40 @@ footer .wrapper {
 }
 .footer .wrapper {
   display: flex;
+  flex-direction: column;
+  padding: 31px 0 35px;
+}
+.footer .wrapper .footer_social_box {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 24px;
+}
+.footer .wrapper .footer_social_box i:hover {
+  cursor: pointer;
+  color: #000000;
+  transform: scale(1.3, 1.3);
+  transition: all 1s cubic-bezier(0.16, 0.96, 0.15, 0.97);
+}
+.footer .wrapper .footer_copyright_box {
+  display: flex;
   justify-content: space-between;
-  padding: 41px 0 35px;
 }
 @media all and (max-width: 700px) {
-  .footer .wrapper {
+  .footer .wrapper .footer_copyright_box {
     display: block;
     padding: 54px 16px 41px 16px;
   }
 }
-.footer .wrapper p {
+.footer .wrapper .footer_copyright_box p {
   font-family: "Open Sans", sans-serif;
   color: #505d68;
   font-size: 16px;
   font-weight: 300;
   line-height: 34px;
 }
-@media all and (max-width: 400px) {
-  .footer .wrapper p {
+@media all and (max-width: 414px) {
+  .footer .wrapper .footer_copyright_box p {
     font-size: 12px;
   }
 }

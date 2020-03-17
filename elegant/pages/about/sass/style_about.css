@@ -1,11 +1,14 @@
+html, body {
+  overflow-x: hidden;
+}
+
 .header {
   background: url("../img/about-header-bg.png") no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0px 0px 55px 47px;
 }
 .header .header_top {
-  padding-bottom: 555px;
+  margin-bottom: 55px;
 }
 
 .about {
