@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon_blog.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../../css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -12,6 +13,16 @@
     <title>Blog</title>
 </head>
 <body>
+
+    <!-- SPINNER -->
+    <div id="load">
+        <div class="spinner_layer d-flex justify-content-center align-items-stretch align-content-center">
+            <div class="spinner-border m-0" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+
     <!-- HEADER -->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light header_top">
@@ -48,20 +59,30 @@
                 <article class="article_item">
                     <img src="img/post1-img.png" alt="post1-img">
                     <h5>This is the Titleof Your Post</h5>
-                    <span>14 September 2014</span>
+                    <span>14 September 2019</span>
                     <p>This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.</p>
-                    <button class="button">
-                        <a href="#">Read More</a>
-                    </button>
+                    <div class="button_box">
+                        <p class="button">Read More</p>
+                    </div>
+                </article>
+                <article class="article_item">
+                    <a name="last_post"></a>
+                    <img src="img/post-img1.png" alt="post-img1">
+                    <h5>Change Your Space</h5>
+                    <span>14 September 2019</span>
+                    <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.</p>
+                    <div class="button_box">
+                        <p class="button">Read More</p>
+                    </div>
                 </article>
                 <article class="article_item">
                     <img src="img/post2-img.png" alt="post2-img">
                     <h5>This is the Titleof Your Post</h5>
-                    <span>14 September 2014</span>
+                    <span>14 September 2019</span>
                     <p>This looks. I want to complexity. That's come to testify to complexity. It's about an object, we kept going and i figured out some basic stuff that acknowledges its very minimalist way beyond the traditions of function from a clutterfree product that form and value on ideas and simplicity. What products have disconnected function of anything of the computer.</p>
-                    <button class="button">
-                        <a href="#">Read More</a>
-                    </button>
+                    <div class="button_box">
+                        <p class="button">Read More</p>
+                    </div>
                 </article>
             </div>
             <aside class="aside_box">
@@ -98,10 +119,8 @@
                 </div>
             </aside>
         </div>
-        <div class="button_box">
-            <button class="button">
-                <a href="#">Load More Posts</a>
-            </button>
+        <div class="button_box load_more">
+            <a class="button" href="#">Load More Posts</a>
         </div>
     </section>
 
@@ -112,15 +131,29 @@
                 <p>© 2020 Designed and Developed by Dzmitry Dauhaliavets</p>
             </div>
             <div class="footer_email">
-                <p>Email: <a href="#">dolgolevets21@gmail.com</a></p>
+                <p>Email: <a href="mailto:dolgolevets21@gmail.com">dolgolevets21@gmail.com</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- SCROLL TOP -->
+    <a href="#" class="scroll_top"></a>
 
     <!-- Scripts BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Scripts BOOTSTRAP -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    
+    <!-- My Scripts -->
+    <script src="../../js/close_load.js"></script>
+    <script src="../../js/scroll_up.js"></script>
+    <script src="js/readMore.js"></script>
+
 </body>
 </html>

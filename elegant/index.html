@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="sass/style.css">
 <title>Elegant</title>
 </head>
 <body>
 
+    <!-- SPINNER -->
+    <div id="load">
+        <div class="spinner_layer d-flex justify-content-center align-items-stretch align-content-center">
+            <div class="spinner-border m-0" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
     <!-- HEADER -->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light header_top">
@@ -40,6 +49,8 @@
             </div>
         </nav>
         <p>Say <span>Haloa</span> to your Portfolio</p>
+        <!-- SCROLL BOTTOM -->
+        <a href="#" class="scroll_bottom"></a>
     </header>
 
     <!-- Section #1 Who We Are -->
@@ -48,9 +59,7 @@
             <h2>Who We Are</h2>
             <h3>Tell The World About Yourself</h3>
             <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.</p>
-            <button class="button">
-                <a href="pages/about/about.html">Read More About Us</a>
-            </button>
+            <a class="button" href="pages/about/about.html">Read More About Us</a>
         </div>
     </section>
 
@@ -59,14 +68,54 @@
             <h2>What We Do</h2>
             <h3>Show Your Amazing Work</h3>
             <div class="what-we-do_box">
-                <div class="what-we-do_item"><img src="img/who_we_are/clmn-1.png" alt="clmn-1"></div>
-                <div class="what-we-do_item"><img src="img/who_we_are/clmn-2.png" alt="clmn-2"></div>
-                <div class="what-we-do_item"><img src="img/who_we_are/clmn-3.png" alt="clmn-3"></div>
-                <div class="what-we-do_item"><img src="img/who_we_are/clmn-4.png" alt="clmn-4"></div>
-                <div class="what-we-do_item"><img src="img/who_we_are/clmn-5.png" alt="clmn-5"></div>
-                <div class="what-we-do_item"><img src="img/who_we_are/clmn-6.png" alt="clmn-6"></div>
-                <div class="what-we-do_item"><img src="img/who_we_are/clmn-7.png" alt="clmn-7"></div>
-                <div class="what-we-do_item"><img src="img/who_we_are/clmn-8.png" alt="clmn-8"></div>
+                <div class="what-we-do_item">
+                    <img src="img/who_we_are/clmn-1.png" alt="clmn-1">
+                    <div class="item_show">
+                        <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="what-we-do_item">
+                    <img src="img/who_we_are/clmn-2.png" alt="clmn-2">
+                    <div class="item_show">
+                        <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="what-we-do_item">
+                    <img src="img/who_we_are/clmn-3.png" alt="clmn-3">
+                    <div class="item_show">
+                        <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="what-we-do_item">
+                    <img src="img/who_we_are/clmn-4.png" alt="clmn-4">
+                    <div class="item_show">
+                        <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="what-we-do_item">
+                    <img src="img/who_we_are/clmn-5.png" alt="clmn-5">
+                    <div class="item_show">
+                        <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="what-we-do_item">
+                    <img src="img/who_we_are/clmn-6.png" alt="clmn-6">
+                    <div class="item_show">
+                        <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="what-we-do_item">
+                    <img src="img/who_we_are/clmn-7.png" alt="clmn-7">
+                    <div class="item_show">
+                        <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="what-we-do_item">
+                    <img src="img/who_we_are/clmn-8.png" alt="clmn-8">
+                    <div class="item_show">
+                        <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
             </div>
     </section>
 
@@ -121,17 +170,14 @@
                     <img src="img/last_post/post-img1.png" alt="">
                 </div>
                 <div class="post_info">
-                    <span>14 September 2014</span>
+                    <span>14 September 2019</span>
                     <h5>Change Your Space</h5>
                     <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores.</p>
-                    <button class="button">
-                        <a href="pages/blog/blog.html">Read</a>
-                    </button>
+                    <a class="button" href="pages/blog/blog.html#last_post">Read</a>
                 </div>
             </div>
             <div class="last-post_button">
-                <button class="button">
-                    <a href="pages/blog/blog.html">More From Our Blog</a></button>
+                <a class="button" href="pages/blog/blog.html">More From Our Blog</a>
             </div>
         </div>
     </section>
@@ -156,8 +202,8 @@
                 </div>
                 <div class="contact-us_item">
                     <h6>Phone</h6>
-                    <p>+375(29)764-07-99<br>
-                        +375(29)724-96-53</p>
+                    <p><a href="tel:+375(29)764-07-99">+375(29)764-07-99</a><br>
+                        <a href="tel:+375(29)724-96-53"></a>+375(29)724-96-53</p>
                 </div>
                 <div class="contact-us_item">
                     <h6>Fax</h6>
@@ -166,9 +212,22 @@
                 </div>
                 <div class="contact-us_item">
                     <h6>Email</h6>
-                    <p><a href="#">e<span>legant</span>@elegant.com</a> <br>
-                       <a href="#">c<span>ommercial</span>@elegant.com</a></p>
+                    <p><a href="mailto:elegant@elegant.com">e<span>legant</span>@elegant.com</a> <br>
+                       <a href="mailto:commercial@elegant.com">c<span>ommercial</span>@elegant.com</a></p>
                 </div>
+            </div>
+            <div class="contact-us_form">
+                <h3>Feedback</h3>
+                <p>Do you want to get to know each other or clarify details? Use this form and we will answer you.</p>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post" id="contactForm" name="feebackForm" target="_blank">
+                    <div class="name_email_box">
+                        <input type="text" name="user_name" id="userName" placeholder="Name" pattern="[A-Za-zА-Яа-яЁё]{2,15}" value="" required>
+                        <input type="email" name="user_email" id="userEmail" placeholder="E-mail" value="" required>
+                    </div>
+                    <textarea name="text_message" id="textMessage" placeholder="Message"></textarea>
+                    <input type="submit" name="send" id="send" value="Send">
+            
+                </form>
             </div>
         </div>
     </section>
@@ -180,15 +239,31 @@
                 <p>© 2020 Designed and Developed by Dzmitry Dauhaliavets</p>
             </div>
             <div class="footer_email">
-                <p>Email: <a href="#">dolgolevets21@gmail.com</a></p>
+                <p>Email: <a href="mailto:dolgolevets21@gmail.com">dolgolevets21@gmail.com</a></p>
             </div>
         </div>
     </footer>
 
+    <!-- SCROLL TOP -->
+    <a href="#" class="scroll_top"></a>
+    
     <!-- Scripts BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Scripts BOOTSTRAP -->
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+    
+    <!-- My scripts -->
+    <script src="js/close_load.js"></script>
+    <script src="js/scroll_up.js"></script>
+    <script src="js/scroll_down.js"></script>
+    <script src="js/full_screen.js"></script>
+    <script src="js/contact_form.js"></script>
+
 </body>
 </html>

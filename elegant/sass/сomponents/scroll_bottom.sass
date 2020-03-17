@@ -1,0 +1,19 @@
+.scroll_bottom 
+    width: 61px
+    height: 61px
+    border: 2px solid #ffffff
+    border-radius: 50%
+    display: none
+    margin: 0 auto
+    &::after
+        content: ''
+        display: block
+        width: 20px
+        height: 20px
+        transform: translate(90%, 80%) rotate(45deg)
+        border-right: 2px solid #ffffff
+        border-bottom: 2px solid #ffffff
+    @media all and ( max-width: 992px )
+        display: block
+        
+        

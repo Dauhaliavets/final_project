@@ -1,19 +1,41 @@
-.what-we-do_box 
-    display: flex
-    flex-flow: row wrap
-    margin-top: 81px
-    .what-we-do_item 
-        width: 25%
-        padding: 1.5px
-        @media all and ( max-width: 1200px )
-            width: 50%
-        @media all and ( max-width: 880px )
-            width: 100%
-        img
-            width: 100%
-            height: 100%
-    .what-we-do_item:hover 
-        cursor: pointer
-        img
-            transform: scale(1.05, 1.05)
-            transition: all 1s cubic-bezier(0.04, 0.74, 0.32, 1.04)
+.what-we-do
+    position: relative
+    .what-we-do_box 
+        display: flex
+        flex-flow: row wrap
+        margin-top: 81px
+        .what-we-do_item 
+            position: relative
+            width: 25%
+            padding: 1.5px
+            overflow: hidden
+            @media all and ( max-width: 1200px )
+                width: 50%
+            @media all and ( max-width: 880px )
+                width: 100%
+            img
+                width: 100%
+                height: 100%
+            .item_show 
+                position: absolute
+                top: 5%
+                left: 5%
+                width: 90%
+                height: 90%
+                padding: 1.5px
+                z-index: -1
+                background-color: rgba(0, 0, 0, 0.3803921568627451)
+                display: flex
+                justify-content: center
+                i 
+                    align-self: center
+                    color: #ffffff
+        .what-we-do_item:hover 
+            cursor: pointer
+            img
+                transform: scale(1.07, 1.07)
+                transition: all 1s cubic-bezier(0.04, 0.74, 0.32, 1.04)
+            .item_show 
+                z-index: 1
+                @media all and ( max-width: 880px )
+                    display: none

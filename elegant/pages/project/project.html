@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon_progect.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../../reset.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -13,6 +14,16 @@
     <title>Project</title>
 </head>
 <body>
+ 
+    <!-- SPINNER -->
+    <div id="load">
+        <div class="spinner_layer d-flex justify-content-center align-items-stretch align-content-center">
+            <div class="spinner-border m-0" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+    </div>
+
     <!-- HEADER -->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light header_top">
@@ -66,9 +77,9 @@
             </div>
         </div>
         <div class="social_buttons">
-            <button class="button"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></button>
-            <button class="button"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></button>
-            <button class="button"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></button>
+            <a class="button" href="https://www.facebook.com/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+            <a class="button" href="https://twitter.com/"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+            <a class="button" href="https://plus.google.com/"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
         </div>
     </section>
 
@@ -79,15 +90,23 @@
                 <p>© 2020 Designed and Developed by Dzmitry Dauhaliavets</p>
             </div>
             <div class="footer_email">
-                <p>Email: <a href="#">dolgolevets21@gmail.com</a></p>
+                <p>Email: <a href="mailto:dolgolevets21@gmail.com">dolgolevets21@gmail.com</a></p>
             </div>
         </div>
     </footer>
+
+    <!-- SCROLL TOP -->
+    <a href="#" class="scroll_top"></a>
 
     <!-- Scripts BOOTSTRAP -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Scripts BOOTSTRAP -->
+
+    <!-- My Scripts -->
+    <script src="../../js/close_load.js"></script>
+    <script src="../../js/scroll_up.js"></script>
+
 </body>
 </html>

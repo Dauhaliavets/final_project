@@ -71,8 +71,9 @@
   margin-bottom: 19px;
 }
 .projects-box .wrapper_projects .current_project img:hover {
-  transform: scale(1.03, 1.03);
-  transition: all 1s ease;
+  cursor: pointer;
+  transform: scale(1.08, 1.08);
+  transition: all 0.5s ease;
 }
 .projects-box .wrapper_projects .current_project img:last-child {
   margin-bottom: 0;
@@ -103,8 +104,9 @@
   width: 100%;
 }
 .projects-box .wrapper_projects .other_projects .other_project_item img:hover {
-  transform: scale(1.02, 1.02);
-  transition: all 1s ease;
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  transition: all 0.7s ease;
 }
 .projects-box .wrapper_projects .other_projects .other_project_item:last-child {
   margin-bottom: 0;
@@ -121,27 +123,28 @@
     margin-top: 68px;
   }
 }
-.projects-box .social_buttons button {
+.projects-box .social_buttons a {
+  text-align: center;
   flex: 0 0 21%;
   border: 1px solid #a1a1a1;
 }
-.projects-box .social_buttons button .fa {
+.projects-box .social_buttons a .fa {
   color: rgba(95, 94, 94, 0.72);
 }
 @media all and (max-width: 766px) {
-  .projects-box .social_buttons button {
+  .projects-box .social_buttons a {
     flex: 0 0 30%;
   }
 }
 @media all and (max-width: 414px) {
-  .projects-box .social_buttons button {
+  .projects-box .social_buttons a {
     margin-bottom: 8px;
   }
 }
-.projects-box .social_buttons button:hover {
+.projects-box .social_buttons a:hover {
   border-radius: 10px;
 }
-.projects-box .social_buttons button:hover .fa {
+.projects-box .social_buttons a:hover .fa {
   color: #202020;
   transform: scale(1.2, 1.2);
   transition: all 1s cubic-bezier(0, 1.15, 0.58, 0.99);

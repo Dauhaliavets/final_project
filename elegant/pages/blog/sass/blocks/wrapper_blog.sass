@@ -59,8 +59,26 @@
                     line-height: 25px
                     letter-spacing: 0.08px
                     margin: 33px 0 67px
-                button 
-                    align-items: left
+                .button_box 
+                    text-align: left 
+                    .button
+                        padding: 18px 48px
+                        background-color: transparent
+                        border: 1px solid $color-border
+                        cursor: pointer
+                        display: inline-block
+                        text-decoration: none
+                        color: $color-text
+                        font-family: $font
+                        font-size: 14px
+                        font-weight: 300
+                        letter-spacing: 0.7px
+                    .button:hover 
+                        background-color: rgba(0, 0, 0, 0.3803921568627451)
+                        border-color: #ececec
+                        transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99)
+                        color: #ffffff
+                        text-decoration: none
             .article_item:not(:last-child)
                 margin-bottom: 57px
         .aside_box 
@@ -115,6 +133,5 @@
                         @media all and ( max-width: 968px )
                             margin-right: 0
     .button_box
-        .button
-            margin: 0 auto
-            display: block
+        margin: 0 auto
+        text-align: center

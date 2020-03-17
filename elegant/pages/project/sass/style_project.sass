@@ -51,8 +51,9 @@
                 width: 100%
                 margin-bottom: 19px
             img:hover 
-                transform: scale(1.03, 1.03)
-                transition: all 1s ease
+                cursor: pointer
+                transform: scale(1.08, 1.08)
+                transition: all 0.5s ease
             img:last-child 
                 margin-bottom: 0
         .other_projects 
@@ -74,8 +75,9 @@
                 img 
                     width: 100%
                 img:hover 
-                    transform: scale(1.02, 1.02)
-                    transition: all 1s ease
+                    cursor: pointer
+                    transform: scale(1.05, 1.05)
+                    transition: all 0.7s ease
             .other_project_item:last-child 
                 margin-bottom: 0
     .social_buttons 
@@ -86,7 +88,8 @@
             flex-direction: column
             padding: 10px
             margin-top: 68px
-        button 
+        a 
+            text-align: center
             flex: 0 0 21%
             border: 1px solid #a1a1a1
             .fa 
@@ -95,7 +98,7 @@
                 flex: 0 0 30%
             @media all and ( max-width: 414px )
                 margin-bottom: 8px
-        button:hover 
+        a:hover 
             border-radius: 10px
             .fa 
                 color: #202020

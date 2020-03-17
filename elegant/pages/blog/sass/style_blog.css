@@ -1,3 +1,25 @@
+.button {
+  padding: 18px 48px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #021725;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.3803921569);
+  border-color: #ececec;
+  transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99);
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .header {
   background: url("../img/blog-header-bg.png") no-repeat;
   background-size: cover;
@@ -100,8 +122,28 @@
   letter-spacing: 0.08px;
   margin: 33px 0 67px;
 }
-.wrapper_blog .wrapper_blog_flex .article_box .article_item button {
-  align-items: left;
+.wrapper_blog .wrapper_blog_flex .article_box .article_item .button_box {
+  text-align: left;
+}
+.wrapper_blog .wrapper_blog_flex .article_box .article_item .button_box .button {
+  padding: 18px 48px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: #021725;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+}
+.wrapper_blog .wrapper_blog_flex .article_box .article_item .button_box .button:hover {
+  background-color: rgba(0, 0, 0, 0.3803921569);
+  border-color: #ececec;
+  transition: 1s all cubic-bezier(0, 1.15, 0.58, 0.99);
+  color: #ffffff;
+  text-decoration: none;
 }
 .wrapper_blog .wrapper_blog_flex .article_box .article_item:not(:last-child) {
   margin-bottom: 57px;
@@ -183,9 +225,9 @@
     margin-right: 0;
   }
 }
-.wrapper_blog .button_box .button {
+.wrapper_blog .button_box {
   margin: 0 auto;
-  display: block;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style_blog.css.map */

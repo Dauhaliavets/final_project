@@ -56,20 +56,25 @@
                 img 
                     width: 100%
             .contact_item_info 
+                flex: 0 0 60%
+                padding: 47px 59px 40px 47px
+                background-color: $color-element-bg
+                @media all and ( max-width: 450px )
+                    padding: 20px
                 p 
-                    flex: 0 0 60%
-                    padding: 47px 59px 40px 47px
                     color: #323d43
                     font-family: $font
                     font-size: 20px
                     font-weight: 300
                     line-height: 32px
-                    background-color: $color-element-bg
                     @media all and ( max-width: 450px )
                         font-size: 18px
-                        padding: 20px
-    .button 
-        display: block
-        margin: 77px auto 86px
-        @media all and ( max-width: 550px )
-            margin: 50px auto 30px
+        .contact-us_form 
+            display: none
+        .button_box
+            margin: 77px auto 86px
+            text-align: center
+            @media all and ( max-width: 550px )
+                margin: 50px auto 30px
+                
+                
